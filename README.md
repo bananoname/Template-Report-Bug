@@ -1,4 +1,4 @@
-# 🧠 Giai đoạn 1 – Tập viết Bug Bounty Report theo format chuyên nghiệp
+# 🧠 Tập viết Bug Bounty Report theo format chuyên nghiệp
 
 ---
 
@@ -77,10 +77,11 @@ Attacker có thể thực thi lệnh tùy ý, có thể dẫn đến chiếm to�
 ## Supporting Material / References
 - CWE-77: Improper Neutralization of Special Elements used in a Command
 - Request:
-```http
+
+http
 GET /ping?ip=127.0.0.1;id HTTP/1.1
 Host: vulnsite.com
-```
+
 - Screenshot:
   ![screenshot](images/command-injection.png)
 
@@ -88,37 +89,12 @@ Host: vulnsite.com
 - Không sử dụng shell command trực tiếp với input của người dùng
 - Sử dụng hàm gọi hệ thống an toàn (vd: `subprocess.run` với `shell=False`)
 - Validate input chỉ cho phép IP hợp lệ (regex IP)
-
 ---
-
 **Author**: user_ctf  
 **Date**: 16/04/2025
-```
-
 ---
-
-## 📤 Bước 3 – Xuất báo cáo thành PDF đẹp
-
-### 1. Cài đặt `pandoc` và template đẹp
-```bash
-sudo apt install pandoc texlive-xetex
 ```
-
-### 2. Tải template "Eisvogel":
-```bash
-wget https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/master/eisvogel.tex -O ~/.pandoc/templates/eisvogel.latex
-```
-
-### 3. Xuất file PDF:
-```bash
-pandoc report.md -o report.pdf --from markdown --template eisvogel --pdf-engine=xelatex
-```
-
-📄 Kết quả: Một file PDF đẹp, chuyên nghiệp như HackerOne/Bugcrowd.
-
----
-
-## 💡 Bước 4 – Tips luyện tập
+### 💡 Bước 3 – Tips luyện tập
 
 - Viết lại những lỗi bạn đã từng khai thác theo đúng format.
 - Mỗi lần đọc writeup trên mạng, hãy thử tự viết lại báo cáo riêng.
