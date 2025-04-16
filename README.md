@@ -7,7 +7,7 @@
 - Biết cách viết một report bảo mật ngắn gọn, rõ ràng, chuyên nghiệp.
 - Áp dụng được cho các nền tảng bug bounty như HackerOne, Bugcrowd.
 - Làm quen với markdown + xuất PDF đẹp.
-- Sẵn sàng để trình bày report cho công ty, cộng đồng, hoặc làm slide dạy người khác.
+- Sẵn sàng để trình bày report cho công ty, cộng đồng.
 
 ---
 
