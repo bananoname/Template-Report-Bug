@@ -1,25 +1,29 @@
+```markdown
 # [Tên lỗ hổng] on [Target]
 
 ## Summary
-[Tóm tắt ngắn gọn về lỗi, tác động, vị trí phát hiện.]
+- Mục tiêu: [target URL / ứng dụng]
+- Lỗ hổng: [type of bug, eg. SQL Injection, XSS, Command Injection]
+- Tác động: [chiếm quyền truy cập, leak dữ liệu,...]
 
 ## Steps to Reproduce
-1. Mô tả bước đầu tiên (login, truy cập page, v.v.)
-2. Gửi payload / thực hiện thao tác khai thác
-3. Quan sát kết quả (screenshot nếu có)
+1. Truy cập [đường dẫn cụ thể]
+2. Gửi payload: `[payload cụ thể]`
+3. Quan sát phản hồi: [mô tả hoặc screenshot]
 
 ## Impact
-[Mô tả hậu quả nếu bị khai thác: chiếm quyền, bypass auth, lộ data...]
+[Mô tả rõ ràng hậu quả nếu khai thác được – nguy cơ thực tế]
 
 ## Supporting Material / References
-- Screenshot / video POC
-- Request/Response (đính kèm định dạng code block)
-- CVE/CWE liên quan nếu có
+- Screenshot minh họa
+- CVE/CWE (nếu có)
+- Request/Response dạng code block
 
-## Suggested Mitigation/Remediation Actions
-[Đề xuất sửa lỗi ngắn gọn và rõ ràng]
+## Remediation
+[Đề xuất cách khắc phục cụ thể]
 
 ---
 
 **Author**: [Tên bạn]  
-**Date**: [dd/mm/yyyy]
+**Date**: [Ngày báo cáo]
+```
